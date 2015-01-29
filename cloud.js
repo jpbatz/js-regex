@@ -19,8 +19,8 @@ module.exports = {
    * @return {String} The new phrase.
    */
   replaceCloud: function(phrase, newWord) {
-    var anotherWord = newWord[0].toUpperCase() + newWord.substr(1);
-    var newPhrase = phrase.replace(/Cloud/, anotherWord);
+    var anotherNewWord = newWord[0].toUpperCase() + newWord.substr(1);
+    var newPhrase = phrase.replace(/Cloud/, anotherNewWord);
     return newPhrase.replace(/cloud/g, newWord);
   },
 
@@ -34,6 +34,7 @@ module.exports = {
    * @return {String}             A new phrase with all `target` words replaced
    */
   replaceWords: function(phrase, targetWord, newWord) {
+    
   }
 
 };
