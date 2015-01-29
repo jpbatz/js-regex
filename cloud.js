@@ -6,6 +6,9 @@ module.exports = {
    * @return {Number} the number of times "cloud" shows up in `phrase`
    */
   findCloud: function(phrase) {
+    var count = 0;
+    count = phrase.match(/\bcloud\b/ig).length;
+    return count;
   },
 
   /**
@@ -16,6 +19,9 @@ module.exports = {
    * @return {String} The new phrase.
    */
   replaceCloud: function(phrase, newWord) {
+    var anotherWord = newWord[0].toUpperCase() + newWord.substr(1);
+    var newPhrase = phrase.replace(/Cloud/, anotherWord);
+    return newPhrase.replace(/cloud/g, newWord);
   },
 
   /**
