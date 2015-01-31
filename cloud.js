@@ -34,7 +34,12 @@ module.exports = {
    * @return {String}             A new phrase with all `target` words replaced
    */
   replaceWords: function(phrase, targetWord, newWord) {
-    
+    var anotherNewWord = newWord[0].toUpperCase() + newWord.substr(1);
+    var anotherTargetWord = targetWord[0].toUpperCase() + targetWord.substr(1);
+    var regexUpper = RegExp(anotherTargetWord, "g");
+    var newPhrase = phrase.replace(regexUpper, anotherNewWord);
+    var regexLower = RegExp(targetWord, "g");
+    return newPhrase.replace(regexLower, newWord);
   }
 
 };
