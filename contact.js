@@ -21,6 +21,10 @@ module.exports = {
    * @return {[String]]} an array of phone numbers.
    */
   findPhoneNumbers: function(phrase) {
+    // actual phone numbers do not have zeroes in certain positions
+    var temp = phrase.match(/\b[0-9]{3}[-]?[0-9]{3}[-]?[0-9]{4}\b/g);
+    console.log("temp: " + temp);
+    return temp;
   }
 
 };

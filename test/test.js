@@ -69,23 +69,23 @@ describe('emails', function() {
   });
 });
 
-// describe('phone numbers', function() {
-//   it('fetches a simple phone number', function() {
-//     var result = contactExercise.findPhoneNumbers('My number is 8085551234');
-//     result.should.deep.equal(['8085551234']);
-//   });
+describe('phone numbers', function() {
+  it('fetches a simple phone number', function() {
+    var result = contactExercise.findPhoneNumbers('My number is 8085551234');
+    result.should.deep.equal(['8085551234']);
+  });
 
-//   it('fetches a phone number with dashes', function() {
-//     var result = contactExercise.findPhoneNumbers('My number is 808-555-1234');
-//     result.should.deep.equal(['808-555-1234']);
-//   });
+  it('fetches a phone number with dashes', function() {
+    var result = contactExercise.findPhoneNumbers('My number is 808-555-1234');
+    result.should.deep.equal(['808-555-1234']);
+  });
 
   // CHALLENGE
   // it('fetches a phone number with the area code in parens', function() {
   //   var result = contactExercise.findPhoneNumbers('My number is (808) 555-1234');
   //   result.should.deep.equal(['(808) 555-1234'])
   // });
-// });
+});
 
 // describe('links', function() {
 //   it('matches href links', function() {
