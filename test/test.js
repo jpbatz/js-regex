@@ -47,27 +47,27 @@ describe('the cloud', function() {
   });
 });
 
-// describe('emails', function() {
-//   it('fetches an email', function() {
-//     var result = contactExercise.findEmails('My email is test@test.com');
-//     result.should.deep.equal(["test@test.com"]);
-//   });
+describe('emails', function() {
+  it('fetches an email', function() {
+    var result = contactExercise.findEmails('My email is test@test.com');
+    result.should.deep.equal(["test@test.com"]);
+  });
 
-//   it('fetches all emails', function() {
-//     var result = contactExercise.findEmails('Please contact us at test@test.com, test1@test.com');
-//     result.should.deep.equal(['test@test.com', 'test1@test.com']);
-//   });
+  it('fetches all emails', function() {
+    var result = contactExercise.findEmails('Please contact us at test@test.com, test1@test.com');
+    result.should.deep.equal(['test@test.com', 'test1@test.com']);
+  });
 
-//   it('does not match using @ as shorthand for the word "at"', function() {
-//     var result = contactExercise.findEmails('Meet me @ Waikiki');
-//     result.should.deep.equal([]);
-//   });
+  it('does not match using @ as shorthand for the word "at"', function() {
+    var result = contactExercise.findEmails('Meet me @ Waikiki');
+    result.should.deep.equal([]);
+  });
 
-//   it('does not fetch Twitter handles', function() {
-//     var result = contactExercise.findEmails('Follow @brendaneich on Twitter');
-//     result.should.deep.equal([]);
-//   });
-// });
+  it('does not fetch Twitter handles', function() {
+    var result = contactExercise.findEmails('Follow @brendaneich on Twitter');
+    result.should.deep.equal([]);
+  });
+});
 
 // describe('phone numbers', function() {
 //   it('fetches a simple phone number', function() {

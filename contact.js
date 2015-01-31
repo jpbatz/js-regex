@@ -6,6 +6,13 @@ module.exports = {
    * @return {[String]} an array of emails, or an empty array if none are found.
    */
   findEmails: function(phrase) {
+    var temp = phrase.match(/\b[a-zA-Z0-9_.]+\@[a-zA-Z]+\.[a-zA-Z]{2,4}\b/g);
+    console.log("temp: " + temp);
+    if(!temp) {
+      return [];
+    } else {
+      return temp;
+    }
   },
 
   /**
