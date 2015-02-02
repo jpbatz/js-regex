@@ -21,8 +21,10 @@ module.exports = {
    * @return {[String]]} an array of phone numbers.
    */
   findPhoneNumbers: function(phrase) {
-    // actual phone numbers do not have zeroes in certain positions
-    var temp = phrase.match(/[(]?\b[0-9]{3}[)-]?[ ]?[0-9]{3}[-]?[0-9]{4}\b/g);
+    // according to http://www.nanpa.com/
+    // "NANP (North American Numbering Plan) numbers are ten digits in length, and they are in the format:
+    // NXX-NXX-XXXX, where N is any digit 2-9 and X is any digit 0-9.
+    var temp = phrase.match(/[(]?\b[2-9][0-9]{2}[)-]?[ ]?[2-9][0-9]{2}[-]?[0-9]{4}\b/g)  // ??? note first 4 chars needs to be before "\b", why???
     console.log("temp: " + temp);
     return temp;
   }
