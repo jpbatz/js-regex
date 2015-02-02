@@ -105,8 +105,8 @@ describe('links', function() {
   });
 
   // REALLY REALLY HARD CHALLENGE
-  // it('replaces the url with another url and maintains attributes', function() {
-  //   var result = linkExercise.replaceLink('<a id="google" href="http://www.google.com" target="_blank">Google</a>', "http://www.facebook.com");
-  //   result.should.equal('<a id="google" href="http://www.facebook.com" target="_blank">Google</a>');
-  // });
+   it('replaces the url with another url and maintains attributes', function() {
+     var result = linkExercise.replaceLink('<a id="google" href="http://www.google.com" target="_blank">Google</a>', "http://www.facebook.com");
+     result.should.equal('<a id="google" href="http://www.facebook.com" target="_blank">Google</a>');
+   });
 });
