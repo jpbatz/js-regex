@@ -6,7 +6,7 @@ module.exports = {
    * @return {[String]}          the href value
    */
   findHRef: function(element) {
-
+    return(element.match(/[hH][tT]{2}[pP][sS]?:\/\/(www\.)?([a-zA-Z_]+\.)+[a-zA-Z]{2,4}/g));
   },
 
   /**

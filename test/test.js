@@ -87,16 +87,16 @@ describe('phone numbers', function() {
   });
 });
 
-// describe('links', function() {
-//   it('matches href links', function() {
-//     var result = linkExercise.findHRef('<a href="http://www.google.com">Google</a>');
-//     result.should.deep.equal(['http://www.google.com']);
-//   });
+describe('links', function() {
+  it('matches href links', function() {
+    var result = linkExercise.findHRef('<a href="http://www.google.com">Google</a>');
+    result.should.deep.equal(['http://www.google.com']);
+  });
 
-//   it('does not matter if the url is in single quotes', function() {
-//     var result = linkExercise.findHRef("<a href='http://www.google.com'>Google</a>");
-//     result.should.deep.equal(['http://www.google.com']);
-//   });
+  it('does not matter if the url is in single quotes', function() {
+    var result = linkExercise.findHRef("<a href='http://www.google.com'>Google</a>");
+    result.should.deep.equal(['http://www.google.com']);
+  });
 
   // CHALLENGE
   // it('replaces the url with another url', function() {
@@ -109,4 +109,4 @@ describe('phone numbers', function() {
   //   var result = linkExercise.replaceLink('<a id="google" href="http://www.google.com" target="_blank">Google</a>', "http://www.facebook.com");
   //   result.should.equal('<a id="google" href="http://www.facebook.com" target="_blank">Google</a>');
   // });
-// });
+});
