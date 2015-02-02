@@ -99,10 +99,10 @@ describe('links', function() {
   });
 
   // CHALLENGE
-  // it('replaces the url with another url', function() {
-  //   var result = linkExercise.replaceLink('<a href="http://www.google.com">Google</a>', "http://www.facebook.com");
-  //   result.should.equal('<a href="http://www.facebook.com">Google</a>');
-  // });
+  it('replaces the url with another url', function() {
+    var result = linkExercise.replaceLink('<a href="http://www.google.com">Google</a>', "http://www.facebook.com");
+    result.should.equal('<a href="http://www.facebook.com">Google</a>');
+  });
 
   // REALLY REALLY HARD CHALLENGE
   // it('replaces the url with another url and maintains attributes', function() {

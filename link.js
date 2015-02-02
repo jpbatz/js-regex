@@ -15,7 +15,8 @@ module.exports = {
    * @return {[String]]}         the string of the HTML element with the new link
    */
   replaceLink: function(element, link) {
-
+    var regexa = new RegExp(/[hH][tT]{2}[pP][sS]?:\/\/(www\.)?([a-zA-Z_]+\.)+[a-zA-Z]{2,4}/);
+    return(element.replace(regexa, link));
   }
 
 };
