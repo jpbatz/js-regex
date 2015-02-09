@@ -1,13 +1,15 @@
 # js-regex
 Regex Exercises
 
-Need to pass 6 tests.
+Need to pass 19 tests.
 
 Uncomment challenge, if you want a challenge.
 
 git remote add upstream https://github.com/devleague/js-regex.git
 
 git pull upstream/master master
+
+## RegExp:
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
 
