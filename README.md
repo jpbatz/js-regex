@@ -9,7 +9,7 @@ git remote add upstream https://github.com/devleague/js-regex.git
 
 git pull upstream/master master
 
-## RegExp:
+## RegExp():
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
 
